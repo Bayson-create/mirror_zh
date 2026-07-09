@@ -1,0 +1,48 @@
+/* 中文镜像 - 三模式切换样式，叠加在原版 screen.css 之上 */
+
+.mode-switch {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+  padding: 0.5em;
+  background: #f5f0e6;
+  border-bottom: 1px solid #ccc;
+}
+
+.mode-switch button {
+  padding: 0.3em 1em;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.mode-switch button.active {
+  background: #8b5a2b;
+  color: #fff;
+  border-color: #8b5a2b;
+}
+
+/* 默认（对照模式）：中英都显示 */
+.zh { display: block; margin: 0.2em 0 0.6em; color: #333; }
+.en { display: block; }
+
+dt .zh, dt .en { display: inline; }
+dd .zh { display: block; margin-top: 0.15em; }
+dd .en { display: block; }
+
+/* 仅英文模式 */
+html[data-mode="en"] .zh { display: none !important; }
+
+/* 仅中文模式 */
+html[data-mode="zh"] .en { display: none !important; }
+
+/* 对照模式下，中文用不同颜色/字体区分 */
+html[data-mode="bilingual"] .zh {
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #555;
+}
