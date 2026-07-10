@@ -1,0 +1,225 @@
+html
+<html lang="zh-CN">
+<!-- headerBasic.inc.php -->
+<head>
+<title>处理下载的文件</title>
+<!-- robots content="none" -->
+<meta charset="utf-8"/>
+<script src="./../../js/sfHover.js"></script>
+<link href="./../../css/screen.css" rel="stylesheet" type="text/css"/>
+<link href="./../../favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="./../../tech/opensearch.xml" rel="search" title="Access to Insight" type="application/opensearchdescription+xml"/>
+<style type="text/css">
+/* <![CDATA[ */
+	.device dl dt { 
+	}
+/* ]]> */
+</style>
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-107837816-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-107837816-1');
+</script>
+</head><!-- edit1 -->
+<body>
+<!-- Begin ATIDoc metadata dump: 
+[ALT_FORMATS]=
+[ALT_ID]={}
+[ALT_STATS]=
+[ALT_TRANS]=
+[ATI_YEAR]={}
+[AUTHOR]={}
+[AUTHOR2]={}
+[AUTHOR_ALTNAME]={}
+[AUTHOR_SHORTNAME]={}
+[BY]={}
+[BY2]={}
+[CATEGORY_SLUG]={Downloads}
+[CHANGELOG]={}
+[COLOPHON]={}
+[COMMENT]={}
+[CONTACT_DETAILS]={}
+[DERIVED_LICENSE_DATA]=
+{The text of this page ("Working with downloaded files", by Access to Insight) is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>. To view a copy of the license, visit <a href= "http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</a>. Documents linked from this page may be subject to other restrictions.}
+{<a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License'  style='float:left;border-width:0;padding-right:1em;' src='./../../img/cc-by-88x31.png' /></a>}
+{1}
+[DIACRITIC_EQUIVALENTS_FOR_INDEXING]=
+[EDITION]={}
+[EDITORS_NOTE]={}
+[EOD]={}
+[EXTENT]={complete}
+[EXTRA_INFO]={}
+[FORMAT_PRINT]={}
+[FORMAT_SUTTAREADINGS]={}
+[FORMAT_ZIP]={}
+[HEADER_POST]={}
+[HEADER_PRE]={}
+[HEAD_EXTRAS]={<style type='text/css'>
+/* <![CDATA[ */
+	.device dl dt { 
+	}
+/* ]]> */
+</style>
+	}
+[LICENSE]={CC-BY}
+[MULTI_AUTHOR]=
+[MY_TITLE]={Working with downloaded files}
+[NIKAYA]={}
+[NIKAYA_ABBREV]={}
+[NO_COLOPHON]={}
+[NO_LINK]={}
+[NUMBER]={}
+[ORIGIN_YEAR]={}
+[PAGE_COUNT]={}
+[PATH_FetchDoc]={index.html}
+[PATH_my]={}
+[PTS_ID]={}
+[REVISION_HISTORY]={}
+[SECTION]={}
+[SEE_ALSO]={}
+[SOURCE]={}
+[SOURCE_COPYRIGHT_OWNER]={}
+[SOURCE_COPYRIGHT_YEAR]={}
+[SOURCE_ISBN]={}
+[SPECIAL_HEADER]={}
+[SUBTITLE]={}
+[SUBTITLE2]={}
+[SUMMARY]={}
+[SUMMARY_SOURCE]={}
+[SURPRISE_ME]={}
+[SUTTA_NOTE]={}
+[TIPITAKA_BOOK]={}
+[TIPITAKA_BOOK_ABBREV]={}
+[TYPE]={unknown}
+
+End ATIDoc metadata dump. -->
+<a id="top"> </a><div id="H_container">
+<div id="H_billboard">
+<div id="H_search">
+<script>
+  (function() {
+    var cx = '006639875531220445029:2z3mhfokk-u'; // bcbs
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<form action="/search_results.html" id="cse-search-box">
+<div>
+<input name="cx" type="hidden" value="006639875531220445029:2z3mhfokk-u"/>
+<input name="ie" type="hidden" value="UTF-8"/>
+<input autocomplete="off" id="q" name="q" size="31" type="text" value=""/>
+<input id="searchsubmit" name="sa" type="submit" value="Search"/>
+</div>
+</form>
+</div>
+<div id="H_crumbtrail">
+<ul class="crumblist">
+<li class="first">
+<ul id="toolMenu"> <!-- popupMenu3.inc.php -->
+<li class="ddTitle">
+<a href="./../../index.html" title="go home"><img alt="" src="./../../img/home3.png"/></a>
+<ul>
+<li><a href="./../../index.html">家</a></li>
+<li><a href="./../../random-sutta.html">随机经</a></li>
+<li><a href="./../../random-article.html">随机文章</a></li>
+<li><a href="./../../abbrev.html">缩写</a></li>
+<li><a href="./../../glossary.html">词汇表</a></li>
+<li><a href="./../../index-subject.html">指数</a></li>
+<li><a href="./../../help.html">帮助！</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="../index.html" title="Back to the Tech Notes page">技术说明</a></li>
+</ul>
+</div><!-- end #H_crumbtrail -->
+<div id="H_tipitakaLinks">
+</div>
+<div class="clear"></div>
+<!-- /robots -->
+<div id="H_meta">
+<div id="H_docTitle">
+		处理下载的文件				</div>
+<div id="H_copyright"><a href="#F_termsOfUse" title="See copyright details">© 2014</a></div>
+<div id="H_altFormat"></div>
+<!-- robots content="none" -->
+</div> <!-- #H_meta -->
+</div> <!-- #H_billboard -->
+<!-- /robots -->
+<div id="H_content">
+<div id="COPYRIGHTED_TEXT_CHUNK"><!-- BEGIN COPYRIGHTED TEXT CHUNK -->
+<div class="chapter">
+<p>整个网站上散布着一些文件链接，供您下载到计算机上并离线阅读。以下是如何使用这些文件。</p>
+</div>
+<div class="chapter">
+<h2>
+<a href="../../lib/list-pdf.html" id="pdf" title="See a list of all the PDF books"><img alt="[pdf icon]" src="./../../img/pdf_24x18.gif"/></a>
+处理 PDF 文件</h2>
+<p><a href="../../lib/list-pdf.html">PDF文档</a> 采用 Adob​​e 专有的便携式文档格式。它们包含精心设计的格式、图形和自定义字体。它们通常看起来比普通网页更“精致”——尤其是在打印时。</p>
+<p>如果文件下载后没有自动打开，请双击该文件。如果这不起作用，请获取免费的副本 <a class="offsite" href="http://www.adobe.com/products/acrobat/readstep2.html" target="offsite" title="Visit www.adobe.com">Adobe Acrobat 阅读器</a> 软件。</p>
+</div>
+<div class="chapter">
+<h2>
+<a id="zip"><img alt="[zip icon]" src="./../../img/zip_18x18.gif"/></a>
+使用 ZIP 文件</h2>
+<p>Zip 文件包含经过压缩以减少下载时间的文件集合。如果下载后存档没有自动解压，请尝试双击它。如果这不起作用，您可能需要获得一个便宜的实用程序来解压缩它。以下是一些建议：</p>
+<ul>
+<li><b><a id="mac">麦金塔用户</a>:</b>
+<a class="offsite" href="http://www.stuffit.com" target="offsite" title="Visit www.stuffit.com">填充膨胀器</a> （免费）或 
+<a class="offsite" href="http://www.maczipit.com" target="offsite" title="Visit www.maczipit.com">齐皮特</a> （共享软件）。</li>
+<li><b>Windows 用户：</b> <a class="offsite" href="http://7-zip.org" target="offsite" title="Visit 7-zip.org">7Zip</a> （自由的）。</li>
+<li><a id="unix"><b>Unix、Linux等用户：</b></a> 您可能已经拥有解压缩 ZIP 文件所需的程序。它因系统而异，但“unzip”或“uzip”等命令已知可以工作。 （“gunzip”是一种不同的动物，并且 <i>不是</i> 工作。）如果您不确定系统上的命令是什么，请输入“<span class="code">男人-k zip</span>”来追踪它。如果您的系统上确实没有它，请让您的系统管理员为您获取它。</li>
+</ul>
+<p>解压缩存档后，其中包含的文件将出现在硬盘上的文件夹中。如果这些文件是 HTML 文件，只需使用 Web 浏览器程序打开它们即可。如果它们是其他类型的文本文件，请使用您喜欢的文本编辑器打开它们。</p>
+</div>
+</div> <!-- #COPYRIGHTED_TEXT_CHUNK (END OF COPYRIGHTED TEXT CHUNK) -->
+</div> <!--  #content -->
+<!-- footer.inc.php -->
+<!-- robots content="none" -->
+<div id="F_footer">
+<div id="F_colophon">
+<!-- 
+	<div id='F_newCopyrightSymbol'>
+		<a href='#top' title='Return to top of page'> </a>
+	</div>
+ -->
+<div id="F_provenance">
+<a href="http://creativecommons.org/licenses/by/4.0/" rel="license"><img alt="Creative Commons License" src="./../../img/cc-by-88x31.png" style="float:left;border-width:0;padding-right:1em;"/></a>
+<div id="F_sourceCopy">©2014 获取洞察。</div>
+<div id="F_sourceEdition"></div>
+<div id="F_sourceTitle">
+		此页面的文本（“使用下载的文件”，作者：Access to Insight）已获得许可 <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">知识共享归属 4.0 国际许可证</a>。要查看许可证副本，请访问 <a href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</a>。从此页面链接的文档可能受到其他限制。 
+						Access to Insight 的最新修订日期为 2013 年 12 月 1 日。				
+		</div>
+<!-- 
+		<div id="F_atiCopy">This Access to Insight edition is &copy;2014.</div>
+ -->
+<div id="F_termsOfUse">
+<!-- 		For additional information about this license, see the <a href='./../../faq.html#copyright'>FAQ</a>. -->
+</div>
+</div>
+<div id="F_citation"><b>如何引用该文档</b> （建议的风格）：“使用下载的文件”，由 Access to Insight 编辑。 <span style="font-style:italic">获得洞察力（BCBS 版）</span>，2013 年 12 月 1 日， <a href="http://www.accesstoinsight.org/tech/download/index.html">http://www.accesstoinsight.org/tech/download/index.html</a> .</div>
+<div id="F_alt-formats"></div>
+</div> <!--  #colophon -->
+<div id="F_toenail">
+<!-- not a mobile device -->
+<a href="./../../help.html">帮助</a>
+		| <a href="./../../help.html#map">站点地图</a>
+		| <a href="./../../faq.html#whatis">关于</a>
+		| <a href="./../../faq.html#contact">接触</a> 
+		| <a href="./../../faq.html#copyright">使用条款</a>
+<div id="bcbs-footer">Insight 的访问权限由 <a href="http://bcbsdharma.org">巴雷佛教研究中心</a></div>
+</div> <!--  #toenail -->
+</div> <!-- #footer -->
+</div> <!-- #container -->
+<!-- /robots -->
+</body>
+</html>
